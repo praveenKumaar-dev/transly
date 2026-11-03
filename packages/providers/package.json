@@ -1,0 +1,66 @@
+{
+  "name": "@transly/providers",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint:pkg": "publint"
+  },
+  "description": "Translation provider adapters for Transly (OpenAI, LibreTranslate) with timeouts, retries and error classification.",
+  "keywords": [
+    "translation",
+    "i18n",
+    "l10n",
+    "ai",
+    "llm",
+    "openai",
+    "icu",
+    "typescript"
+  ],
+  "author": "Transly contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_ORG/transly.git",
+    "directory": "packages/providers"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_ORG/transly/issues"
+  },
+  "homepage": "https://github.com/YOUR_ORG/transly#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "peerDependencies": {
+    "@transly/core": "^0.1.0"
+  }
+}
