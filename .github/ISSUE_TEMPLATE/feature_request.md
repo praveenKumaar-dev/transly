@@ -18,9 +18,9 @@ A clear and concise description of what you want to happen.
 ```
 
 **Packages Affected**
-- [ ] `@transly/core`
-- [ ] `@transly/providers`
-- [ ] New package (e.g. `@transly/react`, `@transly/cli`)
+- [ ] `@praveenkumar-k/transly-core`
+- [ ] `@praveenkumar-k/transly-providers`
+- [ ] New package (e.g. `@praveenkumar-k/transly-react`, `@praveenkumar-k/transly-cli`)
 
 **Describe alternatives you've considered**
 A clear and concise description of any alternative solutions or features you've considered.

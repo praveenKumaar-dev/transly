@@ -1,6 +1,6 @@
 {
-  "name": "@transly/core",
-  "version": "0.1.1",
+  "name": "@praveenkumar-k/transly-core",
+  "version": "0.1.0",
   "type": "module",
   "license": "MIT",
   "sideEffects": false,

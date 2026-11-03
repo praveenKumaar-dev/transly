@@ -3,7 +3,7 @@
   "changelog": "@changesets/cli/changelog",
   "commit": false,
   "fixed": [],
-  "linked": [["@transly/core", "@transly/providers"]],
+  "linked": [["@praveenkumar-k/transly-core", "@praveenkumar-k/transly-providers"]],
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",

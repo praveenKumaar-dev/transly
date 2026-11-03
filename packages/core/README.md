@@ -1,19 +1,19 @@
-# @transly/core
+# @praveenkumar-k/transly-core
 
 Framework-independent translation engine. Zero runtime dependencies. Works in Node 18+, browsers, edge runtimes.
 
 ```bash
-npm install @transly/core
+npm install @praveenkumar-k/transly-core
 ```
 
 ```ts
-import { createTransly } from "@transly/core";
+import { createTransly } from "@praveenkumar-k/transly-core";
 
 const transly = createTransly({
   sourceLanguage: "en",
   supportedLanguages: ["en", "ta", "ml", "hi"],
   messages: { en: { common: { welcome: "Welcome, {name}", cart: "{count, plural, one {# item} other {# items}}" } } },
-  provider, // optional, see @transly/providers
+  provider, // optional, see @praveenkumar-k/transly-providers
 });
 
 transly.t("welcome", { name: "Praveen" }); // static catalogs

@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { createTransly } from "@transly/core";
+import { createTransly } from "@praveenkumar-k/transly-core";
 import { libreTranslate, openAI, ProviderError } from "../src/index.js";
 
 const json = (b: unknown, status = 200) => new Response(JSON.stringify(b), { status });

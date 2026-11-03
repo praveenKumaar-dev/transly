@@ -1,6 +1,6 @@
 {
-  "name": "@transly/providers",
-  "version": "0.1.1",
+  "name": "@praveenkumar-k/transly-providers",
+  "version": "0.1.0",
   "type": "module",
   "license": "MIT",
   "sideEffects": false,
@@ -61,6 +61,6 @@
     "provenance": true
   },
   "peerDependencies": {
-    "@transly/core": "^0.1.1"
+    "@praveenkumar-k/transly-core": "^0.1.0"
   }
 }

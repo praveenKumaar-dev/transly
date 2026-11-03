@@ -1,4 +1,4 @@
-import type { TranslationOptions, TranslationProvider, TranslationResult } from "@transly/core";
+import type { TranslationOptions, TranslationProvider, TranslationResult } from "@praveenkumar-k/transly-core";
 import { postJson, type HttpOptions } from "./http.js";
 
 export function libreTranslate(cfg: { url: string; apiKey?: string } & HttpOptions): TranslationProvider {

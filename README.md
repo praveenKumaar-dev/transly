@@ -13,8 +13,8 @@ Transly unifies **static localization catalogs** (ICU message formats, fallbacks
 
 | Package | Version | Description |
 |---|---|---|
-| [`@transly/core`](./packages/core) | [![npm](https://img.shields.io/npm/v/@transly/core.svg)](https://www.npmjs.com/package/@transly/core) | Framework-independent translation engine with zero runtime dependencies. |
-| [`@transly/providers`](./packages/providers) | [![npm](https://img.shields.io/npm/v/@transly/providers.svg)](https://www.npmjs.com/package/@transly/providers) | Server-side translation provider adapters (OpenAI, LibreTranslate) with retries, timeouts, and error classification. |
+| [`@praveenkumar-k/transly-core`](./packages/core) | [![npm](https://img.shields.io/npm/v/@praveenkumar-k/transly-core.svg)](https://www.npmjs.com/package/@praveenkumar-k/transly-core) | Framework-independent translation engine with zero runtime dependencies. |
+| [`@praveenkumar-k/transly-providers`](./packages/providers) | [![npm](https://img.shields.io/npm/v/@praveenkumar-k/transly-providers.svg)](https://www.npmjs.com/package/@praveenkumar-k/transly-providers) | Server-side translation provider adapters (OpenAI, LibreTranslate) with retries, timeouts, and error classification. |
 
 ---
 
@@ -23,15 +23,15 @@ Transly unifies **static localization catalogs** (ICU message formats, fallbacks
 ### 1. Installation
 
 ```bash
-npm install @transly/core
+npm install @praveenkumar-k/transly-core
 # Optional: for server-side AI translation providers
-npm install @transly/providers
+npm install @praveenkumar-k/transly-providers
 ```
 
 ### 2. Basic Static Translation
 
 ```ts
-import { createTransly } from "@transly/core";
+import { createTransly } from "@praveenkumar-k/transly-core";
 
 const transly = createTransly({
   sourceLanguage: "en",
@@ -58,8 +58,8 @@ console.log(transly.t("common.cart", { count: 3 }));
 ### 3. Runtime AI Translation with Providers
 
 ```ts
-import { createTransly } from "@transly/core";
-import { openAI } from "@transly/providers";
+import { createTransly } from "@praveenkumar-k/transly-core";
+import { openAI } from "@praveenkumar-k/transly-providers";
 
 const transly = createTransly({
   sourceLanguage: "en",
@@ -85,7 +85,7 @@ const batch = await transly.translateBatch(
 
 ## Key Features
 
-- **Zero Runtime Dependencies**: `@transly/core` is pure TypeScript that runs in Node 18+, browsers, and edge environments.
+- **Zero Runtime Dependencies**: `@praveenkumar-k/transly-core` is pure TypeScript that runs in Node 18+, browsers, and edge environments.
 - **ICU Message Syntax**: Supports variable interpolation `{name}`, number formatting, date formatting, and plural rules (`one`, `other`, etc.).
 - **Smart Fallback Chains**: Seamless locale resolution (e.g. `pt-BR` → `pt` → default language → source language).
 - **Batching & Deduplication**: Groups multiple string translation requests into single provider calls with in-flight request deduplication.
@@ -147,4 +147,3 @@ Contributions, bug reports, and feature requests are welcome! Please check out [
 ## License
 
 This project is licensed under the [MIT License](./LICENSE).
-

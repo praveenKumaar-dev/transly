@@ -25,7 +25,7 @@ Thank you for your interest in contributing to Transly!
 
 ## Development Guidelines
 
-- **Zero Runtime Dependencies for Core**: `@transly/core` must remain zero-dependency. All logic should utilize modern JavaScript/TypeScript and standard Web/Node APIs.
+- **Zero Runtime Dependencies for Core**: `@praveenkumar-k/transly-core` must remain zero-dependency. All logic should utilize modern JavaScript/TypeScript and standard Web/Node APIs.
 - **Strict Testing**: Every new feature or bug fix must include comprehensive unit tests. We aim for high test coverage across all packages.
 - **Code Style & Formatting**:
   - Run `npm run lint` and `npm run format:check` before submitting pull requests.

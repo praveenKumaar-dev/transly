@@ -1,4 +1,4 @@
-import type { TranslationOptions, TranslationProvider, TranslationResult } from "@transly/core";
+import type { TranslationOptions, TranslationProvider, TranslationResult } from "@praveenkumar-k/transly-core";
 import { postJson, type HttpOptions } from "./http.js";
 
 const SYSTEM = `You are a translation engine. Translate each string in the JSON array "texts" from the source to the target language.

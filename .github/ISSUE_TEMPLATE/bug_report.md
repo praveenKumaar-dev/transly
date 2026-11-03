@@ -10,8 +10,8 @@ assignees: ""
 A clear and concise description of what the bug is.
 
 **Packages Affected**
-- [ ] `@transly/core`
-- [ ] `@transly/providers`
+- [ ] `@praveenkumar-k/transly-core`
+- [ ] `@praveenkumar-k/transly-providers`
 - [ ] Documentation / CI
 
 **To Reproduce**

@@ -1,14 +1,14 @@
-# @transly/providers
+# @praveenkumar-k/transly-providers
 
-Server-side adapters for `@transly/core`.
+Server-side adapters for `@praveenkumar-k/transly-core`.
 
 ```bash
-npm install @transly/core @transly/providers
+npm install @praveenkumar-k/transly-core @praveenkumar-k/transly-providers
 ```
 
 ```ts
-import { createTransly } from "@transly/core";
-import { openAI, libreTranslate } from "@transly/providers";
+import { createTransly } from "@praveenkumar-k/transly-core";
+import { openAI, libreTranslate } from "@praveenkumar-k/transly-providers";
 
 const provider = openAI({ apiKey: process.env.OPENAI_API_KEY!, model: "gpt-4o-mini" });
 // or: libreTranslate({ url: "http://localhost:5000" })
