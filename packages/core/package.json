@@ -43,13 +43,13 @@
   "author": "Transly contributors",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_ORG/transly.git",
+    "url": "git+https://github.com/praveenKumaar-dev/transly.git",
     "directory": "packages/core"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_ORG/transly/issues"
+    "url": "https://github.com/praveenKumaar-dev/transly/issues"
   },
-  "homepage": "https://github.com/YOUR_ORG/transly#readme",
+  "homepage": "https://github.com/praveenKumaar-dev/transly#readme",
   "engines": {
     "node": ">=18"
   },
